@@ -1,0 +1,56 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.05334",
+   "Default View_TopLeft":"248,243",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1190 -y 190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1190 -y 210 -defaultsOSRD
+preplace port port-id_vauxp13_0 -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port port-id_vauxn13_0 -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_vauxp6_0 -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_vauxn6_0 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_vn_in_0 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_vauxp9_0 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_vauxn15_0 -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace port port-id_vauxp1_0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_vauxn1_0 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_vauxp5_0 -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_vauxn5_0 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_vp_in_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_vauxn9_0 -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_vauxp15_0 -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 240 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 1010 -y 500 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 610 -y 330 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 230 -y 470 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 40 370 450 180 760
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 50 350 410
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 470 570 750
+preplace netloc vauxn13_0_1 1 0 3 30J 590 440J 610 NJ
+preplace netloc vauxn15_0_1 1 0 3 20J 670 NJ 670 NJ
+preplace netloc vauxn1_0_1 1 0 3 NJ 80 NJ 80 820J
+preplace netloc vauxn5_0_1 1 0 3 NJ 100 NJ 100 800J
+preplace netloc vauxn6_0_1 1 0 3 NJ 120 NJ 120 770J
+preplace netloc vauxn9_0_1 1 0 3 NJ 360 460J 200 750J
+preplace netloc vauxp13_0_1 1 0 3 NJ 630 NJ 630 NJ
+preplace netloc vauxp15_0_1 1 0 3 NJ 690 NJ 690 NJ
+preplace netloc vauxp1_0_1 1 0 3 20J 130 NJ 130 790J
+preplace netloc vauxp5_0_1 1 0 3 NJ 40 NJ 40 810J
+preplace netloc vauxp6_0_1 1 0 3 NJ 580 NJ 580 790J
+preplace netloc vauxp9_0_1 1 0 3 NJ 600 NJ 600 840J
+preplace netloc vn_in_0_1 1 0 3 NJ 20 NJ 20 840J
+preplace netloc vp_in_0_1 1 0 3 NJ 60 NJ 60 830J
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 190 NJ 190 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 210 NJ 210 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 250n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 780 270n
+levelinfo -pg 1 0 230 610 1010 1190
+pagesize -pg 1 -db -bbox -sgen -130 0 1310 790
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_ps7_cnt":"2"
+}

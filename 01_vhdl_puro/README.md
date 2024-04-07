@@ -6,7 +6,7 @@ En este tutorial se crea un proyecto de Vivado que contiene solamente archivos H
 
 Creamos nuestro módulo con las siguientes entradas y salidas.
 
-![Entradas y salidas del módulo creado](/images/create_module_led.png)
+![Entradas y salidas del módulo creado](images/create_module_led.png)
 
 El código de VHDL utiliza lógica combinacional para prender los LEDS en función del estado de los switches; y en el process una señal de clock para prender el LED en función del valor de un contador.
 

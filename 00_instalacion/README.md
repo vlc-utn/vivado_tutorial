@@ -32,6 +32,17 @@ Durante la creación de un proyecto nuevo, en la pestaña de selección de placa
 
 ![Creating project](images/create_project_manual.png)
 
+## Instalación de Cable Drivers
+
+Estos permiten reconocer a la PYNQ como un dispositivo en la computadora a la hora de hacer un "printf" por puerto serie. En Linux:
+
+```bash
+cd ${vivado_install_dir}/data/xicom/cable_drivers/lin64/install_script/
+install_drivers/
+
+sudo ./install_drivers
+```
+
 ## Documentación
 
 Dentro de la carpeta PYNQ se encuentran datasheets y archivos relacionados con la placa PYNQ a los que se hará referencia en futuros tutoriales.
