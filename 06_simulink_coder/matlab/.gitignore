@@ -1,0 +1,8 @@
+slprj
+codegen/*/*/*
+!codegen/*/*/*report.html
+!codegen/*/*/*.vhd
+
+hdl_prj/*/*/*
+!hdl_prj/*/*/*report.html
+!hdl_prj/*/*/*.vhd
