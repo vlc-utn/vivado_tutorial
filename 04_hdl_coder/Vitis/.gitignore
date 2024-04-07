@@ -1,0 +1,6 @@
+*
+!/.gitignore
+!*/
+!*/src/*.c
+!*/src/*.h
+!/*.xsa
