@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="file_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="file_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,079.400 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,265.801 ns"></ZoomEndTime>
+      <Cursor1Time time="2,200.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="139"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/file_tb/clk_in">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/file_tb/multiplier_instance/multipliers_i/clk_wiz_0/clk_out1">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/file_tb/in_a">
+      <obj_property name="ElementShortName">in_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/file_tb/in_b">
+      <obj_property name="ElementShortName">in_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/file_tb/output">
+      <obj_property name="ElementShortName">output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output[15:0]</obj_property>
+   </wvobject>
+</wave_config>

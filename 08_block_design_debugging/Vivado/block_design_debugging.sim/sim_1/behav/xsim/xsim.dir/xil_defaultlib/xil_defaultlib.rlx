@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.gen/sources_1/bd/multipliers/hdl/multipliers_wrapper.vhd,1724596860,vhdl,/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.srcs/sim_1/new/file_tb.vhd,,,multipliers_wrapper,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_c_shift_ram_0_0/sim/multipliers_c_shift_ram_0_0.vhd,1724545338,vhdl,,,,multipliers_c_shift_ram_0_0,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_clk_wiz_0_0/multipliers_clk_wiz_0_0.v,1724545338,verilog,,,,multipliers_clk_wiz_0_0,,,../../../../block_design_debugging.gen/sources_1/bd/multipliers/ipshared/c2c6,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_clk_wiz_0_0/multipliers_clk_wiz_0_0_clk_wiz.v,1724545338,verilog,,/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_clk_wiz_0_0/multipliers_clk_wiz_0_0.v,,multipliers_clk_wiz_0_0_clk_wiz,,,../../../../block_design_debugging.gen/sources_1/bd/multipliers/ipshared/c2c6,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_mult_gen_0_0/sim/multipliers_mult_gen_0_0.vhd,1724545338,vhdl,,,,multipliers_mult_gen_0_0,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.ip_user_files/bd/multipliers/sim/multipliers.vhd,1724596860,vhdl,,,,multipliers,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.srcs/sim_1/new/file_tb.vhd,1724597441,vhdl,,,,file_tb,,,,,,,,
+/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/08_block_design_debugging/Vivado/block_design_debugging.srcs/sim_1/new/multipliers_tb.vhd,1724591865,vhdl,,,,multipliers_tb,,,,,,,,

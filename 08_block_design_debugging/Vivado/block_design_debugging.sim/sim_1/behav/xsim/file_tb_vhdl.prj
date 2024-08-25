@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_mult_gen_0_0/sim/multipliers_mult_gen_0_0.vhd" \
+"../../../../block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_c_shift_ram_0_0/sim/multipliers_c_shift_ram_0_0.vhd" \
+"../../../../block_design_debugging.ip_user_files/bd/multipliers/sim/multipliers.vhd" \
+"../../../../block_design_debugging.gen/sources_1/bd/multipliers/hdl/multipliers_wrapper.vhd" \
+"../../../../block_design_debugging.srcs/sim_1/new/file_tb.vhd" \
+
+# Do not sort compile order
+nosort

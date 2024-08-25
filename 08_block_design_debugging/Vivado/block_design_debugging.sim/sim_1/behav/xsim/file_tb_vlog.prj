@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../block_design_debugging.gen/sources_1/bd/multipliers/ipshared/c2c6" \
+"../../../../block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_clk_wiz_0_0/multipliers_clk_wiz_0_0_clk_wiz.v" \
+"../../../../block_design_debugging.ip_user_files/bd/multipliers/ip/multipliers_clk_wiz_0_0/multipliers_clk_wiz_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
