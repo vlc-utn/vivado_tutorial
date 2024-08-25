@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../minimal_ip.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../minimal_ip.gen/sources_1/bd/design_1/ipshared/5c75/hdl/minimal_ip_reset_sync.vhd" \
+"../../../../minimal_ip.gen/sources_1/bd/design_1/ipshared/5c75/hdl/minimal_ip_src_minimal_IP.vhd" \
+"../../../../minimal_ip.gen/sources_1/bd/design_1/ipshared/5c75/hdl/minimal_ip_dut.vhd" \
+"../../../../minimal_ip.gen/sources_1/bd/design_1/ipshared/5c75/hdl/minimal_ip.vhd" \
+"../../../../minimal_ip.ip_user_files/bd/design_1/ip/design_1_minimal_ip_0_3/sim/design_1_minimal_ip_0_3.vhd" \
+"../../../../minimal_ip.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../minimal_ip.srcs/sim_1/new/design_tb.vhd" \
+
+# Do not sort compile order
+nosort

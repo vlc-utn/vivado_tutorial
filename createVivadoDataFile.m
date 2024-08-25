@@ -9,7 +9,7 @@ arguments(Input)
     fileName string
     input (:,1) cell
     bitLength (:, 1) double
-    header string = "Default header"
+    header string = "Default header\n"
     spacer string = ","
 end
     %% Inputs to strings
@@ -27,7 +27,12 @@ end
     for i=1:1:length(input)
         input{i} = dec2bin(input{i}, bitLength(i));
     end
-    
+
+    % Add a "newline" character to the header, if not present
+    headerChar = char(header);
+    if (strcmp(headerChar(end-1:end), '\n') == false)
+        header = strcat(header, "\n");
+    end
     
     %% File formatting
     fileID = fopen(fileName, "w");
