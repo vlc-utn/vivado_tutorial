@@ -14,8 +14,6 @@ Conectamos el IP Core en Vivado, como se muestra a continuación:
 
 ![Alt text](images/vivado_design.png)
 
-El resultado del testbench de vivado se condice con el esperado, multiplicación y suma luego de dos ciclos de clock, salvo en los primeros valores hasta que se propaga la entrada a la salida, momento en que la simulación devuelve "X" o "desconocido".
+El resultado del testbench de vivado se condice con el esperado, multiplicación y suma luego de dos ciclos de clock. Es importante agregar la señal de reset, para evitar valores iniciales como "U" o "X" (Undefined or invalid). El reset se asegura que todos los flip-flops empiecen con su valor inicial de cero.
 
 ![Alt text](images/logic_analyzer.png)
-
-![Alt text](images/tcl_output.png)

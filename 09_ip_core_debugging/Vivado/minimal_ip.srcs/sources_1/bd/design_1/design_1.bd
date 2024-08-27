@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAA3CB0D1B5CEB5C2",
+      "boundary_crc": "0x4079788B0AC0FB5E",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../minimal_ip.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -12,8 +12,7 @@
     },
     "design_tree": {
       "minimal_ip_0": "",
-      "clk_wiz_0": "",
-      "xlconstant_0": ""
+      "clk_wiz_0": ""
     },
     "ports": {
       "sys_clock": {
@@ -78,6 +77,20 @@
         "direction": "O",
         "left": "8",
         "right": "0"
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -102,21 +115,15 @@
             "value": "false"
           }
         }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "8",
-        "xci_name": "design_1_xlconstant_0_2",
-        "xci_path": "ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.xci",
-        "inst_hier_path": "xlconstant_0",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "1"
-          }
-        }
       }
     },
     "nets": {
+      "IPCORE_RESETN_0_1": {
+        "ports": [
+          "rst_0",
+          "minimal_ip_0/IPCORE_RESETN"
+        ]
+      },
       "clk_in1_0_1": {
         "ports": [
           "sys_clock",
@@ -152,12 +159,6 @@
         "ports": [
           "minimal_ip_0/a_times_b",
           "a_times_b_0"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "minimal_ip_0/IPCORE_RESETN"
         ]
       }
     }

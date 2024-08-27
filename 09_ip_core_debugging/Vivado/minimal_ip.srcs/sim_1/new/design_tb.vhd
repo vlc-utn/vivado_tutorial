@@ -20,6 +20,7 @@ architecture Behavioral of design_tb is
     signal in_b :       std_logic_vector (7 downto 0);
     signal a_times_b :  std_logic_vector (15 downto 0);
     signal a_plus_b :   std_logic_vector (8 downto 0);
+    signal rst_0 :      std_logic := '0';
     
 begin
 
@@ -30,7 +31,8 @@ PORT MAP (
     in_a_0 => in_a,
     in_b_0 => in_b,
     a_times_b_0 => a_times_b,
-    a_plus_b_0 => a_plus_b
+    a_plus_b_0 => a_plus_b,
+    rst_0 => rst_0
 );
 
 clock: process begin
@@ -52,6 +54,9 @@ fileIO : process
 	variable file_a_plus_b:    std_logic_vector(8 downto 0);
     
 begin
+    rst_0 <= '0'; wait until rising_edge(clk);
+    rst_0 <= '1'; wait until rising_edge(clk); wait until rising_edge(clk);
+
 	file_open (file_status, file_handler, PATH, READ_MODE);
 	assert (file_status = OPEN_OK) report ">>> Could not open the file" severity failure;
 	readLine (file_handler, buffer_line);  -- Discard header
@@ -77,21 +82,13 @@ begin
     	wait until rising_edge(clk);
     	
     	-- Compare outputs
-    	if ((a_times_b(0) = 'U') or (a_times_b(0) = 'X')) then
-    	   report(">>> X or U value on line: ") & INTEGER'image(file_rows) severity warning;
-    	else
-           assert (file_a_times_b = a_times_b) 
-           report ">>> Output mismatch on line: " & INTEGER'image(file_rows)
-           severity failure;
-    	end if;
+       assert (file_a_times_b = a_times_b) 
+       report ">>> Output mismatch on line: " & INTEGER'image(file_rows)
+       severity failure;
     	
-    	if ((a_plus_b(0) = 'U') or (a_plus_b(0) = 'X')) then
-    	   report(">>> X or U value on line ") & INTEGER'image(file_rows) severity warning;
-    	else
-    	   assert (file_a_plus_b = a_plus_b) 
-    	   report ">>> Output mismatch on line: " & INTEGER'image(file_rows)
-    	   severity failure;
-    	end if;
+       assert (file_a_plus_b = a_plus_b) 
+       report ">>> Output mismatch on line: " & INTEGER'image(file_rows)
+       severity failure;
  
     	file_rows := file_rows + 1;
    	 
