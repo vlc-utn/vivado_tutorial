@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-314,-144",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_valid_out_0 -pg 1 -lvl 3 -x 500 -y 140 -defaultsOSRD
+preplace port port-id_out_0 -pg 1 -lvl 3 -x 500 -y 120 -defaultsOSRD
+preplace port port-id_valid_in_0 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_sys_clk -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 3 -x 500 -y 40 -defaultsOSRD
+preplace port port-id_rst_0 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus input_0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace inst multiple_clock_ip_0 -pg 1 -lvl 2 -x 350 -y 130 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
+preplace netloc IPCORE_RESETN_0_1 1 0 2 NJ 120 NJ
+preplace netloc clk_in1_0_1 1 0 1 NJ 60
+preplace netloc clk_wiz_0_clk_out1 1 1 2 220 40 NJ
+preplace netloc in_rsvd_0_1 1 0 2 NJ 140 NJ
+preplace netloc multiple_clock_ip_0_out_rsvd 1 2 1 NJ 120
+preplace netloc multiple_clock_ip_0_valid_out 1 2 1 NJ 140
+preplace netloc valid_in_0_1 1 0 2 NJ 160 NJ
+levelinfo -pg 1 0 120 350 500
+pagesize -pg 1 -db -bbox -sgen -140 0 630 220
+"
+}
+0

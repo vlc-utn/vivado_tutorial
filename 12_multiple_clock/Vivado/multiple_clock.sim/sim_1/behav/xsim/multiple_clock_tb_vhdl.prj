@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/ipshared/5554/hdl/multiple_clock_ip_reset_sync.vhd" \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/ipshared/5554/hdl/multiple_clock_ip_src_multiple_clock_tc.vhd" \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/ipshared/5554/hdl/multiple_clock_ip_src_multiple_clock.vhd" \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/ipshared/5554/hdl/multiple_clock_ip_dut.vhd" \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/ipshared/5554/hdl/multiple_clock_ip.vhd" \
+"../../../../multiple_clock.ip_user_files/bd/design_1/ip/design_1_multiple_clock_ip_0_0/sim/design_1_multiple_clock_ip_0_0.vhd" \
+"../../../../multiple_clock.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../multiple_clock.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../multiple_clock.srcs/sim_1/new/multiple_clock_tb.vhd" \
+
+# Do not sort compile order
+nosort

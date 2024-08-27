@@ -1,0 +1,169 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x77FC9440693EAF5D",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../multiple_clock.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "multiple_clock_ip_0": "",
+      "clk_wiz_0": ""
+    },
+    "ports": {
+      "valid_out_0": {
+        "direction": "O"
+      },
+      "out_0": {
+        "direction": "O"
+      },
+      "valid_in_0": {
+        "direction": "I"
+      },
+      "input_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "sys_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "multiple_clock_ip_0": {
+        "vlnv": "user.org:ip:multiple_clock_ip:1.0",
+        "ip_revision": "1000000",
+        "xci_name": "design_1_multiple_clock_ip_0_0",
+        "xci_path": "ip/design_1_multiple_clock_ip_0_0/design_1_multiple_clock_ip_0_0.xci",
+        "inst_hier_path": "multiple_clock_ip_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "IPCORE_RESETN_0_1": {
+        "ports": [
+          "rst_0",
+          "multiple_clock_ip_0/IPCORE_RESETN"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "sys_clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "multiple_clock_ip_0/IPCORE_CLK",
+          "clk"
+        ]
+      },
+      "in_rsvd_0_1": {
+        "ports": [
+          "input_0",
+          "multiple_clock_ip_0/in_rsvd"
+        ]
+      },
+      "multiple_clock_ip_0_out_rsvd": {
+        "ports": [
+          "multiple_clock_ip_0/out_rsvd",
+          "out_0"
+        ]
+      },
+      "multiple_clock_ip_0_valid_out": {
+        "ports": [
+          "multiple_clock_ip_0/valid_out",
+          "valid_out_0"
+        ]
+      },
+      "valid_in_0_1": {
+        "ports": [
+          "valid_in_0",
+          "multiple_clock_ip_0/valid_in"
+        ]
+      }
+    }
+  }
+}
