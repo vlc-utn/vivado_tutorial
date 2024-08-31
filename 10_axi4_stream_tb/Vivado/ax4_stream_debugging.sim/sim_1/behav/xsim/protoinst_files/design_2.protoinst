@@ -1,0 +1,31 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_2": {
+			"proto_instances": {
+				"/axi4_stream_adder_fo_0/AXI4_Stream_Slave": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "IPCORE_CLK"},
+						"ARESETN": { "actual": "IPCORE_RESETN"},
+						"TDATA": { "actual": "AXI4_Stream_Slave_TDATA[7:0]"},
+						"TLAST": { "actual": "AXI4_Stream_Slave_TLAST"},
+						"TREADY": { "actual": "AXI4_Stream_Slave_TREADY"},
+						"TVALID": { "actual": "AXI4_Stream_Slave_TVALID"}
+					}
+				},
+				"/axis_data_fifo_0/M_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "s_axis_aclk"},
+						"ARESETN": { "actual": "s_axis_aresetn"},
+						"TDATA": { "actual": "m_axis_tdata[7:0]"},
+						"TLAST": { "actual": "m_axis_tlast"},
+						"TREADY": { "actual": "m_axis_tready"},
+						"TVALID": { "actual": "m_axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
