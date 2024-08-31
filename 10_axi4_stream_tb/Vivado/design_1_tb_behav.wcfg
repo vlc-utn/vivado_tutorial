@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_xpm_cdc_sv_220102727 " />
+            <top_module name="design_1_tb" />
+            <top_module name="external_ports_adder_four_src_four_value_adder_pac" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/design_1_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_tb/design_instance/design_1_i/external_ports_adder_0/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_tb/first_in_0">
+      <obj_property name="ElementShortName">first_in_0</obj_property>
+      <obj_property name="ObjectShortName">first_in_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_tb/design_instance/design_1_i/external_ports_adder_0/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_tb/data_out_0">
+      <obj_property name="ElementShortName">data_out_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_tb/valid_out_0">
+      <obj_property name="ElementShortName">valid_out_0</obj_property>
+      <obj_property name="ObjectShortName">valid_out_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_tb/design_instance/design_1_i/external_ports_adder_0/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_tb/design_instance/design_1_i/external_ports_adder_0/last_in">
+      <obj_property name="ElementShortName">last_in</obj_property>
+      <obj_property name="ObjectShortName">last_in</obj_property>
+   </wvobject>
+</wave_config>

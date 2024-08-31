@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.615572",
-   "Default View_TopLeft":"-460,-135",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-199,-1",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
@@ -19,15 +19,15 @@ preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 370 -y 190 -defaultsOSRD -resize 
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
 preplace inst axi4_stream_adder_fo_0 -pg 1 -lvl 3 -x 610 -y 310 -defaultsOSRD -resize 176 330
 preplace netloc IPCORE_RESETN_0_1 1 0 3 N 260 220 350 NJ
+preplace netloc axi4_stream_adder_fo_0_data_out 1 3 1 NJ 210
+preplace netloc axi4_stream_adder_fo_0_valid_out 1 3 1 NJ 410
 preplace netloc axis_data_fifo_0_s_axis_tready 1 1 3 240 20 NJ 20 720J
 preplace netloc clk_in1_0_1 1 0 1 NJ 60
 preplace netloc clk_wiz_0_clk_out1 1 1 3 230 30 500 30 NJ
+preplace netloc first_in_0_1 1 0 3 NJ 430 N 430 NJ
 preplace netloc s_axis_tdata_0_1 1 0 2 NJ 120 N
 preplace netloc s_axis_tlast_0_1 1 0 2 NJ 150 N
 preplace netloc s_axis_tvalid_0_1 1 0 2 NJ 230 N
-preplace netloc axi4_stream_adder_fo_0_data_out 1 3 1 NJ 210
-preplace netloc axi4_stream_adder_fo_0_valid_out 1 3 1 NJ 410
-preplace netloc first_in_0_1 1 0 3 NJ 430 N 430 NJ
 preplace netloc axis_data_fifo_0_M_AXIS 1 2 1 N 190
 levelinfo -pg 1 0 120 370 610 740
 pagesize -pg 1 -db -bbox -sgen -190 0 910 490

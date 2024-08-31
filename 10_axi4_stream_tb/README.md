@@ -38,3 +38,16 @@ A continuación, podemos ver la comparación de los diagramas temporales de Simu
 ![Alt text](images/vivado_logic.png)
 
 Sin embargo, el testbench funciona correctamente. El principal problema es que la señal "valid_out" tiene un ciclo menos de clock levantado a la salida que en Matlab.
+
+
+## Usando todos puertos externos
+
+Crear la interfaz AXI4-Stream parece que genera problemas. Teniendo conocimiento de cómo funciona AXI4-STREAM, hago todas las señales externas
+
+![Alt text](images/external_interface.png)
+
+El resultado ahora se condice 1:1 con el resultado de Simulink, y la comunicación con la FIFO se logró sin problemas.
+
+![Alt text](images/ext_vivado_diagram.png)
+
+![Alt text](images/ext_vivado_logic.png)

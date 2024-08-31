@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four_reset_sync.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four_src_four_value_adder_pac.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four_src_rising_edge.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four_src_four_value_adder.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four_dut.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/ipshared/f6cb/hdl/external_ports_adder_four.vhd" \
+"../../../../ax4_stream_debugging.ip_user_files/bd/design_1/ip/design_1_external_ports_adder_0_0/sim/design_1_external_ports_adder_0_0.vhd" \
+"../../../../ax4_stream_debugging.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../ax4_stream_debugging.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../ax4_stream_debugging.srcs/sim_1/new/design_1_tb.vhd" \
+
+# Do not sort compile order
+nosort
