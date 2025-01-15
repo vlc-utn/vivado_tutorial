@@ -68,3 +68,99 @@ Para generar el archivo de memoria para validar en Vivado:
 * En Matlab, todos los datos son sampleados con la frecuencia más alta. Esto no significa que en el modelo utilizan frecuencias de sampleo iguales, sino que al cargarlos en el archivo, los valores más lentos se repiten "n" veces (por ejemplo, una señal de 12.5MHz se guarda repetida 8 veces por valor, para tener 100MHz).
 
 * En Vivado, se compara 1 a 1 la salida de Simulink con la de Vivado, y tienen que ser exactamente iguales!
+
+## Comparación de sintesís con un clock y múltiples clocks
+
+Nos interesa interpretar el archivo de constraints y el timing del circuito para diferentes opciones. El problema que se viene teniendo es que el OFDM Modulator, que corre a un clock de 50MHz, no cumple el timing para 100MHz, pero no necesita tener esa reestricción de timing.
+
+### IP AAA
+
+Primero, vamos a usar:
+
+* Target Frequency = 100MHZ.
+* Clock input = Single.
+* Treat Simulink rates as actual hardware rates = Off.
+* Ninguna optimización.
+
+![Alt text](images/aa.png)
+
+En Vivado, el IP Core tiene solo una entrada de clock de 100MHz. En Vivado, a pesar que una parte del código corre a 100MHz y la otra a 12.5MHz, ambos clocks tienen la restricción de 100MHz para el timing.
+
+![Alt text](images/bb.png)
+
+### IP BBB
+
+Ahora usamos:
+
+* Target Frequency = 100MHz.
+* Clock input = Single.
+* Trat Simulink rates as actual hardware rates = On.
+* Ninguna optimización.
+
+No hubo ningún cambio respecto con AAA.
+
+### IP CCC
+
+Ahora usamos:
+
+* Target Frequency = 100MHz.
+* Clock input = Single.
+* Trat Simulink rates as actual hardware rates = On.
+* Optimización: enabled-based constraint
+
+En la carpeta del IP Core se genera un archivo de constraints con el siguiente contenido:
+
+```vhd
+# Multicycle constraints for clock enable: multiple_clock_tc.u1_d8_o0
+set enbregcell [get_cells -hier -filter {mcp_info=="multiple_clock_tc.u1_d8_o0"}]
+set enbregnet [get_nets -of_objects [get_pins -of_objects $enbregcell -filter {DIRECTION == OUT}]]
+set reglist1 [get_cells -of [filter [all_fanout -flat -endpoints_only $enbregnet] IS_ENABLE]]
+set_multicycle_path 8 -setup -from $reglist1 -to $reglist1 -quiet
+set_multicycle_path 7 -hold -from $reglist1 -to $reglist1 -quiet
+```
+
+A Vivado no le importa el agregado del archivo de constraints.
+
+#### IP DDD
+
+Ahora usamos:
+
+* Target Frequency = 0MHz.
+* Clock input = Single.
+* Treat Simulink rates as actual hardware rates = On.
+* Optimización: enabled-based constraint
+
+Nada distinto desde Matlab. El IP Core generado tiene como entrada un clock de 100MHz.
+
+### IP EEE
+
+Ahora usamos:
+
+* Target Frequency = 200MHz.
+* Clock input = Multiple.
+* Treat Simulink rates as actual hardware rates = Off.
+* Enabled-based constraint = off.
+
+HDL Coder no soporta "multiple clocks" como parámetro para la configuración de IP Cores.
+
+## Usando el ejemplo de Matlab
+
+Vamos a basarnos en [este ejemplo](https://la.mathworks.com/help/hdlcoder/ug/multicycle-path-constraints.html), y ver si podemos hacerlo funcionar tal cual la documentación.
+
+Primero, generamos el IP Core con los siguientes parámetros:
+
+* Target frequency = 130MHz.
+* Clock Input = Single
+* Treat Simulink rates as actual hardware rates = On.
+* Enabled-based constraint = Off
+
+Dado que la frecuencia a la que opera el bloque es de 2MHz, y la frecuencia objetivo es de 130MHz, Matlab determino que el oversampling factor de 65.
+
+![Alt text](cc/images.png)
+
+La síntesis en Vivado de este bloque es un desastre:
+
+* El clock de entrada es de 100MHz, no 130MHz como se indicó en el modelo.
+* El timing no cumple.
+
+

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Sep 14 12:45:34 2024
+# Process ID: 70401
+# Current directory: /home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore/aaa_ip_v1_0/prj_ip
+# Command line: vivado -mode batch -notrace -source vivado_ip_package.tcl
+# Log file: /home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore/aaa_ip_v1_0/prj_ip/vivado.log
+# Journal file: /home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore/aaa_ip_v1_0/prj_ip/vivado.jou
+# Running On: cotti-machine, OS: Linux, CPU Frequency: 3099.333 MHz, CPU Physical cores: 2, Host memory: 12314 MB
+#-----------------------------------------------------------
+source vivado_ip_package.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.766 ; gain = 43.836 ; free physical = 262 ; free virtual = 20803
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/cotti/Desktop/Proyecto_final/vlc_utn/vivado_tutorial/12_multiple_clock/hdl_prj/ipcore/aaa_ip_v1_0/prj_ip'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cotti/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_RESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_RESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'IPCORE_RESETN'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'IPCORE_CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'IPCORE_CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_src_multiple_clock_tc.vhd" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_src_multiple_clock_tc.vhd" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_src_multiple_clock.vhd" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_src_multiple_clock.vhd" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_reset_sync.vhd" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_reset_sync.vhd" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_dut.vhd" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip_dut.vhd" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip.vhd" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/aaa_ip.vhd" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 14 12:45:58 2024...

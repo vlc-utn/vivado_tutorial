@@ -16,7 +16,7 @@ preplace inst multiple_clock_ip_0 -pg 1 -lvl 2 -x 350 -y 130 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
 preplace netloc IPCORE_RESETN_0_1 1 0 2 NJ 120 NJ
 preplace netloc clk_in1_0_1 1 0 1 NJ 60
-preplace netloc clk_wiz_0_clk_out1 1 1 2 220 40 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 2 230 40 NJ
 preplace netloc in_rsvd_0_1 1 0 2 NJ 140 NJ
 preplace netloc multiple_clock_ip_0_out_rsvd 1 2 1 NJ 120
 preplace netloc multiple_clock_ip_0_valid_out 1 2 1 NJ 140

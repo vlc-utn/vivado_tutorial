@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-272,-322",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_out_rsvd_0 -pg 1 -lvl 3 -x 690 -y -140 -defaultsOSRD
+preplace port port-id_valid_in_0 -pg 1 -lvl 0 -x -20 -y -100 -defaultsOSRD
+preplace port port-id_valid_out_0 -pg 1 -lvl 3 -x 690 -y -120 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace port port-id_reset_rtl -pg 1 -lvl 0 -x -20 -y 0 -defaultsOSRD
+preplace portBus in_rsvd_0 -pg 1 -lvl 0 -x -20 -y -120 -defaultsOSRD
+preplace inst aaa_ip_0 -pg 1 -lvl 1 -x 150 -y -130 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 150 -y 10 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 480 -y -60 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 0 2 20 80 280
+preplace netloc clk_wiz_locked 1 1 1 290 -20n
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 10 100 NJ 100 660
+preplace netloc in_rsvd_0_1 1 0 1 NJ -120
+preplace netloc aaa_ip_0_out_rsvd 1 1 2 280J -170 670J
+preplace netloc valid_in_0_1 1 0 1 NJ -100
+preplace netloc aaa_ip_0_valid_out 1 1 2 300J -160 660J
+preplace netloc clk_100MHz_1 1 0 1 NJ 20
+preplace netloc reset_rtl_1 1 0 2 0 90 300J
+levelinfo -pg 1 -20 150 480 690
+pagesize -pg 1 -db -bbox -sgen -180 -220 820 180
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"1"
+}
